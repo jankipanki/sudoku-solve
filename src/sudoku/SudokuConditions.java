@@ -12,7 +12,6 @@ public class SudokuConditions {
         return false;
     }
 
-
     //sprawdzamy czy jest możliwa cyfra w kolumnie
     public boolean isInColumn(int[][] board, int column, int number) {
         for (int i = 0; i < SudokuSolve.SIZE; i++) {
@@ -22,7 +21,6 @@ public class SudokuConditions {
         }
         return false;
     }
-
 
     //sprawdzamy czy jest możliwa cyfra w kwadracie 3x3
     public boolean isInBox(int[][] board, int row, int column, int number) {
@@ -38,7 +36,6 @@ public class SudokuConditions {
         }
         return false;
     }
-
 
     //łączona metoda do sprawdzenia wszystkich trzech możliwośći
     public boolean isOk(int[][] board, int row, int column, int number) {
